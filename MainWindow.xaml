@@ -1,0 +1,23 @@
+﻿<Window x:Class="password.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:password"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="registrationBtn" Content="Зарегистрироваться" HorizontalAlignment="Center" Margin="0,280,0,0" VerticalAlignment="Top" Width="180" Click="registrationBtn_Click"/>
+        <Button x:Name="goToAuthorizationBtn" Content="Авторизоваться" HorizontalAlignment="Center" Margin="0,318,0,0" VerticalAlignment="Top" Width="180" Click="goToAuthorizationBtn_Click"/>
+        <TextBox x:Name="loginBox" HorizontalAlignment="Left" Margin="345,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="passwordConfirmCheckBox" HorizontalAlignment="Left" Margin="345,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Visibility="Hidden"/>
+        <Label Content="Регистрация" HorizontalAlignment="Left" Margin="291,46,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="32"/>
+        <Button x:Name="passwordCheckBtn" Content="*" HorizontalAlignment="Left" Margin="506,168,0,0" VerticalAlignment="Top" Width="18" Height="18" Click="passwordCheckBtn_Click"/>
+        <Label Content="Логин:" HorizontalAlignment="Left" Margin="299,137,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль:" HorizontalAlignment="Left" Margin="291,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Подтверждение пароля:" HorizontalAlignment="Left" Margin="201,192,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="passwordCheckBox" HorizontalAlignment="Left" Margin="346,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Visibility="Hidden"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="345,169,0,0" VerticalAlignment="Top" Width="150"/>
+        <PasswordBox x:Name="passwordConfirmBox" HorizontalAlignment="Left" Margin="345,196,0,0" VerticalAlignment="Top" Width="150"/>
+    </Grid>
+</Window>
